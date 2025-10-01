@@ -1,6 +1,8 @@
+import { Button } from "@/components/ui/button"
+
 const HomePage = () => {
     return (
-        <>Prostore</>
+        <div><Button>Check</Button></div>
     );
 };
 
