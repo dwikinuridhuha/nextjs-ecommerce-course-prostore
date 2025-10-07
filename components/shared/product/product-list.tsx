@@ -1,3 +1,5 @@
+import ProductCard from "@/components/shared/product/product-card";
+
 type TProductListProps = {
   data: any;
   title?: string;
@@ -14,7 +16,7 @@ const ProductList = ({ data, title, limit }: TProductListProps) => {
       {data.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {limtedData.map((product: any) => (
-            <div key={product.name}>{product.name}</div>
+            <ProductCard key={product.slug} product={product} />
           ))}
         </div>
       ) : (
