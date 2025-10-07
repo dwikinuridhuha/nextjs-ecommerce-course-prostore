@@ -18,9 +18,7 @@ const ProductList = ({ data, title, limit }: TProductListProps) => {
           ))}
         </div>
       ) : (
-        <div>
-          <p>No products found</p>
-        </div>
+        <div>No products found</div>
       )}
     </div>
   );
